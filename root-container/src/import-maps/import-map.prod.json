@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "react": "https://cdn.jsdelivr.net/npm/react@16.13.0/umd/react.production.min.js",
+    "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.0/umd/react-dom.production.min.js",
+    "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.3.4/lib/system/single-spa.min.js",
+    "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
+    "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js",
+    "zone.js": "https://cdn.jsdelivr.net/npm/zone.js@0.10.3/dist/zone.min.js",
+    "@ceiba-software/root-config": "/root-config.js",
+    "@ceiba-software/area-design": "//localhost:4200/main.js",
+    "@ceiba-software/area-tecnica": "//localhost:8500/ceiba-software-area-tecnica.js",
+    "@ceiba-software/area-produccion": "//localhost:8080/app.js"
+  }
+}
