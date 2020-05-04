@@ -7,10 +7,10 @@
     "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js",
     "zone.js": "https://cdn.jsdelivr.net/npm/zone.js@0.10.3/dist/zone.min.js",
     "@ceiba-software/root-config": "/root-config.js",
-    "@ceiba-software/area-design": "/main.js",
     "@ceiba-software/root-page": "/root-page.js",
-    "@ceiba-software/area-tecnica": "/ceiba-software-area-tecnica.js",
-    "@ceiba-software/area-produccion": "/app.js",
-    "@ceiba-software/navigation-bar": "/ceiba-software-navigation-bar.js"
+    "@ceiba-software/area-design": "/area-design/main.js",
+    "@ceiba-software/area-tecnica": "/area-tecnica/ceiba-software-area-tecnica.js",
+    "@ceiba-software/area-produccion": "/area-produccion/app.js",
+    "@ceiba-software/navigation-bar": "/navigation-bar/ceiba-software-navigation-bar.js"
   }
 }
