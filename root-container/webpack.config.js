@@ -22,6 +22,7 @@ module.exports = (webpackConfigEnv) => {
     },
     entry: {
       "root-config": path.resolve(__dirname, "src") + "/root-config.ts",
+      "root-page": path.resolve(__dirname, "src") + "/root-page.ts",
     },
     output: {
       path: path.resolve(__dirname, "./dist"),
@@ -29,7 +30,7 @@ module.exports = (webpackConfigEnv) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        inject: "body",
+        inject: false,
         template: "src/index.ejs",
         templateParameters: {
           isLocal: webpackConfigEnv && webpackConfigEnv.isLocal === "true",

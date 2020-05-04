@@ -9,6 +9,7 @@
     "@ceiba-software/root-config": "/root-config.js",
     "@ceiba-software/area-design": "//localhost:4200/main.js",
     "@ceiba-software/area-tecnica": "//localhost:8500/ceiba-software-area-tecnica.js",
-    "@ceiba-software/area-produccion": "//localhost:8080/app.js"
+    "@ceiba-software/area-produccion": "//localhost:8080/app.js",
+    "@ceiba-software/navigation-bar": "//localhost:8600/ceiba-software-navigation-bar.js"
   }
 }

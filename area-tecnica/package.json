@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --port 8500",
+    "start": "webpack-dev-server --port 8500 --host 0.0.0.0",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env.analyze=true",
     "lint": "eslint src --ext js,ts,tsx",
@@ -60,7 +60,9 @@
     "@types/webpack-env": "^1.15.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-shadow": "^18.1.0",
     "sass-loader": "^8.0.2",
+    "to-string-loader": "^1.1.6",
     "url-loader": "^4.1.0"
   }
 }

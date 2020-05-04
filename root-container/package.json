@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --mode=development --port 9000 --env.production=false --env.importMap=dev",
+    "start": "webpack-dev-server --mode=development --port 9000 --env.production=false --env.importMap=dev --host 0.0.0.0",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "jest",
     "format": "prettier --write './**'",
@@ -50,6 +50,7 @@
     "axios": "^0.19.2",
     "copy-webpack-plugin": "^5.1.1",
     "file-loader": "^6.0.0",
-    "single-spa": "^5.4.0"
+    "single-spa": "^5.4.0",
+    "single-spa-html": "^1.1.2"
   }
 }

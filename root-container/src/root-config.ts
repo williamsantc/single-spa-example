@@ -18,4 +18,16 @@ registerApplication({
   activeWhen: "/produccion",
 });
 
+registerApplication({
+  name: "@ceiba-software/root-page",
+  app: () => System.import("@ceiba-software/root-page"),
+  activeWhen: (location) => location.pathname === "/",
+});
+
+registerApplication({
+  name: "@ceiba-software/navigation-bar",
+  app: () => System.import("@ceiba-software/navigation-bar"),
+  activeWhen: () => true,
+});
+
 start();
