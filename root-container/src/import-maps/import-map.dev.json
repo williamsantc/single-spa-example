@@ -6,11 +6,11 @@
     "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
     "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js",
     "zone.js": "https://cdn.jsdelivr.net/npm/zone.js@0.10.3/dist/zone.min.js",
-    "@ceiba-software/root-config": "//192.168.1.9:9000/root-config.js",
-    "@ceiba-software/root-page": "//192.168.1.9:9000/root-page.js",
-    "@ceiba-software/area-design": "//192.168.1.9:4200/main.js",
-    "@ceiba-software/area-tecnica": "//192.168.1.9:8500/ceiba-software-area-tecnica.js",
-    "@ceiba-software/area-produccion": "//192.168.1.9:8080/app.js",
-    "@ceiba-software/navigation-bar": "//192.168.1.9:8600/ceiba-software-navigation-bar.js"
+    "@ceiba-software/root-config": "//localhost:9000/root-config.js",
+    "@ceiba-software/root-page": "//localhost:9000/root-page.js",
+    "@ceiba-software/area-design": "//localhost:4200/main.js",
+    "@ceiba-software/area-tecnica": "//localhost:8500/ceiba-software-area-tecnica.js",
+    "@ceiba-software/area-produccion": "//localhost:8080/app.js",
+    "@ceiba-software/navigation-bar": "//localhost:8600/ceiba-software-navigation-bar.js"
   }
 }
