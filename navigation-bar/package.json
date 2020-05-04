@@ -44,11 +44,5 @@
     "ts-loader": "^7.0.2",
     "webpack-config-single-spa-ts": "^1.4.2",
     "webpack-dev-server": "^3.9.0"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-typescript"
-    ]
   }
 }
