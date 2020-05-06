@@ -4,5 +4,4 @@ import { setPublicPath } from "systemjs-webpack-interop";
  * https://webpack.js.org/guides/public-path/#on-the-fly
  * https://single-spa.js.org/docs/faq/#code-splits
  */
-
 setPublicPath("@ceiba-software/area-tecnica");

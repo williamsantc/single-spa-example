@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "single-spa-vue": "^1.5.2",
-    "systemjs-webpack-interop": "^1.1.0",
+    "systemjs-webpack-interop": "^2.1.0",
     "url-loader": "^4.1.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"

@@ -6,6 +6,7 @@
   margin-bottom: 1rem;
   display: flex;
   display: -ms-flexbox;
+  z-index: 1000;
   justify-content: center;
   -webkit-justify-content: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,7 +16,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-ul {
+.ul-container {
   background-color: #ffffff;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +32,7 @@ ul {
   max-width: 300px;
 }
 
-li {
+.link {
   cursor: pointer;
   margin-left: 1rem;
   margin-right: 1rem;
