@@ -4,18 +4,13 @@ import { appendStyles } from "./utils/append-styles.util";
 export class NavBar extends HTMLElement {
 
     public connectedCallback() {
-        let shadow = null;
-        if(this.attachShadow) {
-            shadow = this.attachShadow({mode: 'closed'});
-        } else {
-            shadow = this;
-        }
+        const shadow = this.attachShadow({mode: 'closed'});
         appendStyles(shadow, styles);
         const ul = document.createElement('ul');
         const liTech = document.createElement('li');
         const liProduction = document.createElement('li');
         const liDesign = document.createElement('li');
-        liTech.innerText = 'Tecnica';
+        liTech.innerText = 'Técnica';
         liTech.className = 'link';
         liProduction.innerText = 'Producción';
         liProduction.className = 'link';

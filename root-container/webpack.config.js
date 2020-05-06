@@ -1,5 +1,5 @@
 const webpackMerge = require("webpack-merge");
-const singleSpaDefaults = require("webpack-config-single-spa-ts");
+const singleSpaDefaults = require("./webpack/config-single-spa-ts");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
@@ -21,8 +21,9 @@ module.exports = (webpackConfigEnv) => {
       disableHostCheck: true,
     },
     entry: {
-      "root-config": path.resolve(__dirname, "src") + "/root-config.ts",
-      "root-page": path.resolve(__dirname, "src") + "/root-page.ts",
+      polyfills: path.resolve(__dirname, "src") + "/polyfills.ts",
+      index: path.resolve(__dirname, "src") + "/index.ts",
+      "root-page": path.resolve(__dirname, "src") + "/apps/root-page.ts",
     },
     output: {
       path: path.resolve(__dirname, "./dist"),
@@ -50,6 +51,24 @@ module.exports = (webpackConfigEnv) => {
         },
       ]),
     ],
-    externals: ["single-spa", /^@ceiba-software\/.+$/],
+    module: {
+      rules: [
+        {
+          test: /\.s[ac]ss$/i,
+          use: [
+            // Creates `style` nodes from JS strings
+            "style-loader",
+            // Translates CSS into CommonJS
+            "css-loader",
+            // Compiles Sass to CSS
+            "sass-loader",
+          ],
+        },
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
+      ],
+    },
   });
 };

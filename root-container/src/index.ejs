@@ -6,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ceiba Software</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <style type="text/css">
-        body {
-            margin: 0;
-        }
-    </style>
     <!--
       This CSP allows any SSL-enabled host, but you should limit these directives further to increase your app's security.
       Learn more about CSP policies at https://content-security-policy.com/#directive
@@ -18,14 +13,15 @@
     <!--<meta http-equiv="Content-Security-Policy"
           content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">-->
     <meta name="importmap-type" content="systemjs-importmap"/>
-    <script type="systemjs-importmap" src="import-map.json"></script>
-    <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@1.14.6/dist/import-map-overrides.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/system.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/extras/amd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/extras/named-exports.js"></script>
 </head>
 <body>
-<script>System.import('@ceiba-software/root-config');</script>
+<script src="polyfills.js" nomodule></script>
+<script type="systemjs-importmap" src="import-map.json"></script>
+<script src="https://cdn.jsdelivr.net/npm/import-map-overrides@1.14.6/dist/import-map-overrides.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/system.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/extras/amd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/extras/named-exports.js"></script>
+<script src="index.js"></script>
 <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
 </html>

@@ -1,3 +1,4 @@
+import "./index.scss";
 import { registerApplication, start } from "single-spa";
 
 registerApplication({
@@ -20,7 +21,7 @@ registerApplication({
 
 registerApplication({
   name: "@ceiba-software/root-page",
-  app: () => System.import("@ceiba-software/root-page"),
+  app: () => import("./apps/root-page"),
   activeWhen: (location) => location.pathname === "/",
 });
 
