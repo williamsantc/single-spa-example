@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.4.3",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "classlist.js": "^1.1.20150312",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
